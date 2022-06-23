@@ -44,5 +44,6 @@ public class MainItmoJava {
         } else {
             //logic
         }
+        System.out.println("new branch");
     }
 }
