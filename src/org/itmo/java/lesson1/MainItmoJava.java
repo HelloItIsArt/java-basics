@@ -2,24 +2,24 @@ package org.itmo.java.lesson1;
 
 public class MainItmoJava {
     public static void main(String[] args) {
-//        System.out.println(); ctrl + / ,клавиши для коммента
+//        System.out.println(); ctrl + / ,РєР»Р°РІРёС€Рё РґР»СЏ РєРѕРјРјРµРЅС‚Р°
         byte b = 100;
         short s = 123;
         int i = 500;
-        long l = 5000000000L; // буква L потому что маленькая l похожа на 1
+        long l = 5000000000L; // Р±СѓРєРІР° L РїРѕС‚РѕРјСѓ С‡С‚Рѕ РјР°Р»РµРЅСЊРєР°СЏ l РїРѕС…РѕР¶Р° РЅР° 1
         float f = 12.3f;
-        double d = 14.5d; // можно без указания d, или 14 * 1.0
+        double d = 14.5d; // РјРѕР¶РЅРѕ Р±РµР· СѓРєР°Р·Р°РЅРёСЏ d, РёР»Рё 14 * 1.0
 
         char c = 'a';
         boolean isTrue = true;
 
-        byte r = (byte)(b + i); // преобразование
-//        System.out.println(r); // 88 потому что переполнение
+        byte r = (byte)(b + i); // РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ
+//        System.out.println(r); // 88 РїРѕС‚РѕРјСѓ С‡С‚Рѕ РїРµСЂРµРїРѕР»РЅРµРЅРёРµ
         int r1 = b + i;
-//        System.out.println(r1); // int > byte поэтому переполнения нет
+//        System.out.println(r1); // int > byte РїРѕСЌС‚РѕРјСѓ РїРµСЂРµРїРѕР»РЅРµРЅРёСЏ РЅРµС‚
 
         double i1 = i * 1.0 / 3;
-        double i2 = i / 3d;         // виды преобразования в double
+        double i2 = i / 3d;         // РІРёРґС‹ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РІ double
         double i3 = (double)(i / 3);
 
         System.out.println(i1);
