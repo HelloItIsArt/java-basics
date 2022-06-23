@@ -1,7 +1,5 @@
 package org.itmo.java.lesson2;
 
-import java.lang.reflect.Constructor;
-
 public class Car {
     private String brand;
     private String model;
