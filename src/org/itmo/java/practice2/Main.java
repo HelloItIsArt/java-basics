@@ -7,5 +7,7 @@ public class Main {
         System.out.println();
         Person notMe = new Person("Somepers", "Somepersonov", "Some specialist", 30, true);
         System.out.println(notMe);
+        Calculator calc = new Calculator();
+        System.out.println(calc.multiplication(1, 2));
     }
 }
