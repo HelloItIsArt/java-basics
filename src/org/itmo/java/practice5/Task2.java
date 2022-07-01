@@ -5,10 +5,16 @@ import java.util.Scanner;
 // метод, для проверки СЛОВА палиндрома (вопрос про понимание задачи)
 public class Task2 {
     public static void palindromeCheck(String text) {
+        // проверка на null
+        if (text == null) {
+            System.out.println("The text is null");
+            return;
+        }
+
         Scanner scanner = new Scanner(text);
         String[] arr = text.split(" ");
 
-        // порверка на пустоту
+        // проверка на пустоту
         if (text.equals("")) {
             System.out.println("The text is empty");
             return;
@@ -41,7 +47,7 @@ public class Task2 {
     }
 
     public static void main(String[] args) {
-        String word = "rfgad"; // null!! check this
+        String word = "rfgad";
         palindromeCheck(word);
     }
 }
