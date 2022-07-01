@@ -1,39 +1,38 @@
 package org.itmo.java.practice4;
 
-public class DivisionBy3And5 {
-    int k = 1;
-    int k1 = 1;
-    int k2 = 15;
+// Программа вывода на консоль числа от 1 до 100
+// которые делятся на 3, на 5, на оба числа
+public class Task2 { // while?
     public void divisionBy3And5() {
+
         System.out.print("Делится на 3:");
         for (int i = 0; i <= 100; i++) {
-            int j = 0;
-            if ((i / 3) == (j + k)) {
-                this.k++;
+            if ((i % 3) == 0) {
                 System.out.print(" " + i + " ");
             }
         }
+
         System.out.println();
+
         System.out.print("Делится на 5:");
         for (int i = 0; i <= 100; i++) {
-            int j = 0;
-            if ((i / 5) == (j + k1)) {
-                this.k1++;
+            if ((i % 5) == 0) {
                 System.out.print(" " + i + " ");
             }
         }
+
         System.out.println();
+
         System.out.print("Делится на 3 и 5:");
         for (int i = 0; i <= 100; i++) {
-            int j = 0;
-            if (((i / 5) & (i / 3)) == (j + k2)) {
-                this.k2 += 15;
+            if ((i % 5) == 0 & (i % 3) == 0) {
                 System.out.print(" " + i + " ");
             }
         }
     }
+
     public static void main(String[] args) {
-        DivisionBy3And5 test = new DivisionBy3And5();
+        Task2 test = new Task2();
         test.divisionBy3And5();
     }
 }

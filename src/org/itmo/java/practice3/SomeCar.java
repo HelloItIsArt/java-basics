@@ -1,7 +1,6 @@
 package org.itmo.java.practice3;
 
-import org.w3c.dom.ls.LSOutput;
-
+/* Task 2 */
 public class SomeCar {
     private ColorRange colorRange;
     private String name;
@@ -62,5 +61,15 @@ public class SomeCar {
 
     public void setWeight(Integer weight) {
         this.weight = weight;
+    }
+
+    public static void main(String[] args) {
+        SomeCar car1 = new SomeCar(ColorRange.BLACK, "KIA", 1550);
+        System.out.println(car1.showCarFeatures());
+        SomeCar car2 = new SomeCar(ColorRange.RED, "Skoda", 1200);
+        System.out.println(car2.showCarFeatures());
+
+        SomeCar car3 = new SomeCar(ColorRange.RED, 1200);
+        System.out.println(car3.showCarFeatures());
     }
 }

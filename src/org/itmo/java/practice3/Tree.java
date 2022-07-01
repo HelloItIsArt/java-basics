@@ -1,5 +1,6 @@
 package org.itmo.java.practice3;
 
+/* Task 4 */
 public class Tree {
     private Integer age;
     private  boolean isAlive;
@@ -27,5 +28,15 @@ public class Tree {
                 ", isAlive=" + isAlive +
                 ", treeName='" + treeName + '\'' +
                 '}';
+    }
+
+    public static void main(String[] args) {
+        Tree tree1 = new Tree();
+        Tree tree2 = new Tree(50, "willow");
+        Tree tree3 = new Tree(30, true, "Pine");
+
+        System.out.println(tree1.toString());
+        System.out.println(tree2.toString());
+        System.out.println(tree3.toString());
     }
 }

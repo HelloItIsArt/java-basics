@@ -1,6 +1,7 @@
 package org.itmo.java.practice4;
 
-public class OddNumbers {
+// Программа вывода на консоль нечетных чисел от 1 до 99
+public class Task1 {
     public void checking() {
         for (int i = 1; i < 100; i++) {
             if (i % 2 != 0)
@@ -11,7 +12,7 @@ public class OddNumbers {
     }
 
     public static void main(String[] args) {
-        OddNumbers test = new OddNumbers();
+        Task1 test = new Task1();
         test.checking();
     }
 }
