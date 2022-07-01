@@ -1,19 +1,19 @@
 package org.itmo.java.practice5;
 
-import java.util.Scanner;
-
 public class Test {
     public static void main(String[] args) {
+        int[] arr = {1234, 2522, 34, 345};
+        int min, max;
+        min = max = arr[0];
 
-        String st = "fghn";
-        Scanner sc = new Scanner(st);
-        if (sc.hasNextInt()) {
-            System.out.println("вы ввели число");
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+            if (arr[i] > max) {
+                max = arr[i];
+            }
         }
-        else {
-            System.out.println(st);
-        }
-        st = "hniu" + "\u0020" + "gfb";
-        System.out.println(st);
+        System.out.println(min + " " + max);
     }
 }
